@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 import '../../../theme/styled_theme.dart';
 import '../../widget/already_have_an_account_acheck.dart';
 
+/// A form for the login screen.
+///
+/// This widget displays a form with input fields for email and password,
+/// along with a login button and a link to sign up.
 class LoginForm extends StatelessWidget {
   const LoginForm({Key? key}) : super(key: key);
 
@@ -11,6 +15,7 @@ class LoginForm extends StatelessWidget {
     return Form(
       child: Column(
         children: [
+          // Email input field
           TextFormField(
             keyboardType: TextInputType.emailAddress,
             textInputAction: TextInputAction.next,
@@ -24,6 +29,7 @@ class LoginForm extends StatelessWidget {
               ),
             ),
           ),
+          // Password input field
           Padding(
             padding:
                 const EdgeInsets.symmetric(vertical: AppSizes.defaultPadding),
@@ -41,6 +47,7 @@ class LoginForm extends StatelessWidget {
             ),
           ),
           const SizedBox(height: AppSizes.defaultPadding),
+          // Login button
           ElevatedButton(
             onPressed: () {},
             child: Text(
@@ -48,6 +55,7 @@ class LoginForm extends StatelessWidget {
             ),
           ),
           const SizedBox(height: AppSizes.defaultPadding),
+          // Link to sign up
           AlreadyHaveAnAccountCheck(
             press: () {
               Navigator.push(
