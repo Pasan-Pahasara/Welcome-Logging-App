@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:welcome_login/theme/styled_theme.dart';
+
+import '../../../theme/styled_theme.dart';
 
 /// A widget that displays a welcome image.
 ///

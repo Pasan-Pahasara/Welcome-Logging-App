@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:welcome_login/theme/styled_theme.dart';
+
+import 'styled_theme.dart';
 
 /// The primary theme data for the app.
 final ThemeData appThemeData = ThemeData(

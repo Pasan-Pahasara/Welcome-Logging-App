@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:welcome_login/screens/welcome_page/welcome_page.dart';
-import 'package:welcome_login/theme/primary_theme.dart';
+
+import '../../theme/primary_theme.dart';
+import '../welcome_screen/welcome_screen.dart';
 
 class WelcomeLoginApp extends StatelessWidget {
   const WelcomeLoginApp({super.key});
