@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:welcome_login/screens/welcome_page/widget/welcome_image.dart';
 import 'package:welcome_login/screens/widget/background.dart';
 import 'package:welcome_login/theme/responsive_theme.dart';
 
@@ -13,6 +14,11 @@ class WelcomeScreen extends StatelessWidget {
           child: Responsive(
             desktop: Row(
               mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Expanded(
+                  child: WelcomeImage(),
+                ),
+              ],
             ), mobile: Text("Mobile"), 
           ),
         ),
