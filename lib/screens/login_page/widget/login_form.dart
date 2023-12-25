@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../theme/styled_theme.dart';
+import '../../widget/already_have_an_account_acheck.dart';
 
 class LoginForm extends StatelessWidget {
   const LoginForm({Key? key}) : super(key: key);
@@ -47,6 +48,18 @@ class LoginForm extends StatelessWidget {
             ),
           ),
           const SizedBox(height: AppSizes.defaultPadding),
+          AlreadyHaveAnAccountCheck(
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return const Text("Sign Up");
+                  },
+                ),
+              );
+            },
+          ),
         ],
       ),
     );
