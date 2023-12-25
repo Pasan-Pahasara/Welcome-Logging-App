@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:welcome_login/screens/welcome_page/widget/welcome_image.dart';
-import 'package:welcome_login/screens/widget/background.dart';
-import 'package:welcome_login/theme/responsive_theme.dart';
+
+import '../../theme/responsive_theme.dart';
+import '../widget/background.dart';
+import 'widget/login_signup_btn.dart';
+import 'widget/welcome_image.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -18,8 +20,20 @@ class WelcomeScreen extends StatelessWidget {
                 Expanded(
                   child: WelcomeImage(),
                 ),
+                Expanded(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        width: 450,
+                        child: LoginAndSignupBtn(),
+                      ),
+                    ],
+                  ),
+                ),
               ],
-            ), mobile: Text("Mobile"), 
+            ),
+            mobile: MobileWelcomeScreen(),
           ),
         ),
       ),
@@ -27,3 +41,28 @@ class WelcomeScreen extends StatelessWidget {
   }
 }
 
+class MobileWelcomeScreen extends StatelessWidget {
+  const MobileWelcomeScreen({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return const Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        WelcomeImage(),
+        Row(
+          children: [
+            Spacer(),
+            Expanded(
+              flex: 8,
+              child: LoginAndSignupBtn(),
+            ),
+            Spacer(),
+          ],
+        ),
+      ],
+    );
+  }
+}
