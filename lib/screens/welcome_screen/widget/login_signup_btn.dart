@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:welcome_login/theme/styled_theme.dart';
 
+import '../../login_screen/login_screen.dart';
+
 /// A widget that displays login and sign up buttons.
 ///
 /// This widget is used in the welcome screen to provide buttons for logging in and signing up.
@@ -22,7 +24,7 @@ class LoginAndSignupBtn extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) {
-                  return const Text("Login");
+                  return const LoginScreen();
                 },
               ),
             );
