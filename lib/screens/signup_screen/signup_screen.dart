@@ -6,6 +6,10 @@ import '../widget/background.dart';
 import 'widget/sign_up_top_image.dart';
 import 'widget/signup_form.dart';
 
+/// The screen for signing up a new user.
+/// 
+/// This screen displays a background with a signup form and social signup options.
+/// It is used to capture user information and create a new account.
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
 
@@ -41,6 +45,10 @@ class SignUpScreen extends StatelessWidget {
   }
 }
 
+/// A screen widget for mobile signup.
+///
+/// This widget displays a signup screen for mobile devices.
+/// It consists of a top image, a signup form, and social signup options.
 class MobileSignupScreen extends StatelessWidget {
   const MobileSignupScreen({
     Key? key,

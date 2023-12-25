@@ -4,6 +4,10 @@ import '../../../theme/styled_theme.dart';
 import '../../login_screen/login_screen.dart';
 import '../../widget/already_have_an_account_acheck.dart';
 
+/// A form for signing up a user.
+///
+/// This form includes input fields for email and password, as well as a sign-up button
+/// and a link to the login screen. It is typically used in the sign-up screen of an app.
 class SignUpForm extends StatelessWidget {
   const SignUpForm({
     Key? key,
@@ -14,6 +18,7 @@ class SignUpForm extends StatelessWidget {
     return Form(
       child: Column(
         children: [
+          // Email input field
           TextFormField(
             keyboardType: TextInputType.emailAddress,
             textInputAction: TextInputAction.next,
@@ -27,6 +32,7 @@ class SignUpForm extends StatelessWidget {
               ),
             ),
           ),
+          // Password input field
           Padding(
             padding:
                 const EdgeInsets.symmetric(vertical: AppSizes.defaultPadding),
@@ -44,11 +50,13 @@ class SignUpForm extends StatelessWidget {
             ),
           ),
           const SizedBox(height: AppSizes.defaultPadding / 2),
+          // Sign-up button
           ElevatedButton(
             onPressed: () {},
             child: Text("Sign Up".toUpperCase()),
           ),
           const SizedBox(height: AppSizes.defaultPadding),
+          // Link to the login screen
           AlreadyHaveAnAccountCheck(
             login: false,
             press: () {

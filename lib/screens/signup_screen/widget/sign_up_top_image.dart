@@ -3,6 +3,10 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../theme/styled_theme.dart';
 
+/// A widget that displays the top image section of the sign-up screen.
+///
+/// This widget includes the "Sign Up" text and an SVG image for the sign-up icon.
+/// It is typically used as the header of the sign-up screen.
 class SignUpScreenTopImage extends StatelessWidget {
   const SignUpScreenTopImage({
     Key? key,
